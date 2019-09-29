@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	int A, B,C;
+	cout << "Введите числа А,B и C: " << endl;
+	cin >> A >> B >>C;
+	if (A<B && B<C && A<C)
+		cout << "Высказываниe A<B<C вернo";
+	else
+		cout << "Высказываниe A<B<C  не вернo";
+}   
