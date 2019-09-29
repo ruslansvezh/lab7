@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	int A,x,i=0;
+	cout << "Введите число А: " << endl;
+	cin >> A;
+	x = A % 2;
+	while (A > 0)
+	{
+		A /= 10;
+		i++;
+	}
+	if (A >= 0 && x == 0 && i == 2)
+	{
+		cout << "Данное число является четным двузначным!";
+	}
+	else cout << "Данное число не является четным двузначным!";
+}   
