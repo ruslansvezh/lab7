@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+	int a,b,c;
+	cout << "Введите стороны треугольника: " << endl;
+	cin >> a>>b>>c;
+	if (c > a && c > b && pow(c, 2) == pow(a, 2) + pow(b, 2))
+		cout << "Треугольник является прямоугольным";
+	else if (a > b && a > c && pow(a, 2) == pow(b, 2) + pow(c, 2))
+		cout << "Треугольник является прямоугольным";
+	else if (b > a && b > c && pow(b, 2) == pow(c, 2) + pow(a, 2))
+		cout << "Треугольник является прямоугольным";
+	else
+		cout << "Треугольник не прямоугольный!";
+}   
